@@ -1,0 +1,2 @@
+echo "-----> detect will be automatic"
+exit 0
