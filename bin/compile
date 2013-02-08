@@ -1,0 +1,7 @@
+
+LIBSASL_URL="https://s3.amazonaws.com/libsasl2-buildpack/cyrus-sasl-cvs.tgz"
+LIBSASL_BIN="vendor/libsasl-2"
+
+mkdir -p $1/$LIBSASL_BIN
+
+curl $LIBSASL_URL -o - | tar -xz -C $1/$LIBSASL_BIN -f -

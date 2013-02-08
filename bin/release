@@ -1,0 +1,3 @@
+---
+config_vars:
+  PATH: "vendor/libsasl-2/include:/vendor/libsasl-2/lib:/usr/bin:/bin"
