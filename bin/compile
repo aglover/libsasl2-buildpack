@@ -12,3 +12,11 @@ mkdir -p $1/$LIBSASL_BIN
 curl $LIBSASL_URL -o - | tar -xz -C $1/$LIBSASL_BIN -f -
 
 echo "-----> LIBSASL bin dir is ${LIBSASL_BIN}"
+
+CACHE_DIR=$2
+
+cd $BUILD_DIR
+mv * $CACHE_DIR/lib
+
+
+echo "-----> LIBSASL libraries moved to ${CACHE_DIR}/lib"
