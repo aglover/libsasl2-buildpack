@@ -18,5 +18,9 @@ CACHE_DIR=$2
 cd $BUILD_DIR
 mv * $CACHE_DIR/lib
 
+FINAL_DIR=$1/$LIBSASL_BIN
+BUILD_DIR=$1
+export FINAL_DIR
+export BUILD_DIR
 
-echo "-----> LIBSASL libraries moved to ${CACHE_DIR}/lib"
+echo "-----> LIBSASL libraries moved to ${CACHE_DIR}/lib and final dir is ${FINAL_DIR}"
