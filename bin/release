@@ -1,9 +1,8 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 cat << EOF
 ---
 config_vars:
-  PATH: "/app/vendor/libsasl-2:/app/vendor/libsasl-2/include:/app/vendor/libsasl-2/lib:/usr/bin:/bin"
+  PATH: /app/vendor/libsasl-2:/app/vendor/libsasl-2/include:/app/vendor/libsasl-2/lib:/usr/bin:/bin
+  LIBRARY_PATH: .heroku/vendor/lib:/app/vendor/libsasl-2:/app/vendor/libsasl-2/include:/app/vendor/libsasl-2/lib
 EOF
-
-echo "-----> PATH IS WHAT? $PATH"

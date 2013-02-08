@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 echo "-----> LIBSASL build pack being used"
 
@@ -10,3 +10,5 @@ LIBSASL_BIN="vendor/libsasl-2"
 mkdir -p $1/$LIBSASL_BIN
 
 curl $LIBSASL_URL -o - | tar -xz -C $1/$LIBSASL_BIN -f -
+
+echo "-----> LIBSASL bin dir is ${LIBSASL_BIN}"
