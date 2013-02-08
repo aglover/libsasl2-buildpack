@@ -1,5 +1,8 @@
+#!/bin/bash
 
 echo "-----> LIBSASL build pack being used"
+
+#$1 is build dir
 
 LIBSASL_URL="https://s3.amazonaws.com/libsasl2-buildpack/cyrus-sasl-cvs.tgz"
 LIBSASL_BIN="vendor/libsasl-2"

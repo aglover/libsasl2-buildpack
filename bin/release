@@ -3,5 +3,7 @@
 cat << EOF
 ---
 config_vars:
-  PATH: "vendor/libsasl-2/include:/vendor/libsasl-2/lib:/usr/bin:/bin"
+  PATH: "/app/vendor/libsasl-2:/app/vendor/libsasl-2/include:/app/vendor/libsasl-2/lib:/usr/bin:/bin"
 EOF
+
+echo "-----> PATH IS WHAT? $PATH"
