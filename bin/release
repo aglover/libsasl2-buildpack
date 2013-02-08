@@ -3,6 +3,6 @@
 cat << EOF
 ---
 config_vars:
-  PATH: /app/vendor/libsasl-2:/app/vendor/libsasl-2/include:/app/vendor/libsasl-2/lib:/usr/bin:/bin
-  LIBRARY_PATH: .heroku/vendor/lib:/app/vendor/libsasl-2:/app/vendor/libsasl-2/include:/app/vendor/libsasl-2/lib
+  PATH: /app/tmp/repo.git/.cache/lib/libsasl-2:/app/tmp/repo.git/.cache/lib/libsasl-2/include:/app/tmp/repo.git/.cache/lib/libsasl-2/lib:/usr/bin:/bin
+  LIBRARY_PATH: /app/tmp/repo.git/.cache/lib/libsasl-2:/app/tmp/repo.git/.cache/lib/libsasl-2/include:/app/tmp/repo.git/.cache/lib/libsasl-2/lib
 EOF
