@@ -1,4 +1,6 @@
 
+echo "-----> LIBSASL build pack being used"
+
 LIBSASL_URL="https://s3.amazonaws.com/libsasl2-buildpack/cyrus-sasl-cvs.tgz"
 LIBSASL_BIN="vendor/libsasl-2"
 
